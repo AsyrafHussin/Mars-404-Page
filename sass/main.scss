@@ -24,9 +24,11 @@ html{
   left: 0;
   right: 0;
   top: 16vmin;
+  width: 30vmin;
 
   @include breakpoint(mobile){
     top: 53vmin;
+    width: 40vmin;
   }
 }
 
@@ -78,9 +80,11 @@ html{
   position: absolute;
   top: 18vmin;
   left: 10vmin;
+  height: 30vmin;
 
   @include breakpoint(mobile){
     top: 2vmin;
+    height: 40vmin;
   }
 }
 
@@ -88,4 +92,8 @@ html{
   position: absolute;
   bottom: 15vmin;
   right: 24vmin;
+
+  @include breakpoint(mobile){
+    width: 50vmin;
+  }
 }
