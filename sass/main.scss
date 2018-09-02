@@ -10,14 +10,14 @@ html{
 .mars{
   left:0;
   right:0;
-  bottom:-1vmin;
+  bottom:0;
   position:absolute;
   height: 27vmin;
   background: url('https://mars-404.templateku.co/img/mars.svg') no-repeat bottom center;
   background-size: cover;
 
   @include breakpoint(mobile){
-    height: 40vmin;
+    // height: 40vmin;
   }
 }
 
@@ -77,6 +77,10 @@ html{
     background: white;
     color: #4D007D;
   }
+
+  @include breakpoint(mobile){
+    font-size: 3.5vmin;
+  }
 }
 
 .astronaut{
@@ -97,6 +101,6 @@ html{
 
   @include breakpoint(mobile){
     width: 45vmin;
-    bottom: 26vmin;
+    bottom: 18vmin;
   }
 }
