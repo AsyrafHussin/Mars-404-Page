@@ -13,8 +13,12 @@ html{
   bottom:-1vmin;
   position:absolute;
   height: 27vmin;
-  background: url('https://mars-404.templateku.co/img/mars.svg') no-repeat bottom;
+  background: url('https://mars-404.templateku.co/img/mars.svg') no-repeat bottom center;
   background-size: cover;
+
+  @include breakpoint(mobile){
+    height: 40vmin;
+  }
 }
 
 .logo-404{
@@ -63,8 +67,8 @@ html{
 .btn-back{
   border: 1px solid white;
   color: white;
-  height: 20px;
-  padding: 15px;
+  height: 5vmin;
+  padding: 12px;
   font-family: $nunito-font;
   text-decoration: none;
   z-index: 3;
@@ -92,7 +96,7 @@ html{
   right: 24vmin;
 
   @include breakpoint(mobile){
-    width: 40vmin;
-    bottom: 17vmin;
+    width: 45vmin;
+    bottom: 26vmin;
   }
 }
