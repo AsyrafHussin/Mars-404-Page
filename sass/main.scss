@@ -28,7 +28,6 @@ html{
 
   @include breakpoint(mobile){
     top: 53vmin;
-    width: 40vmin;
   }
 }
 
@@ -84,7 +83,6 @@ html{
 
   @include breakpoint(mobile){
     top: 2vmin;
-    height: 40vmin;
   }
 }
 
@@ -92,8 +90,4 @@ html{
   position: absolute;
   bottom: 15vmin;
   right: 24vmin;
-
-  @include breakpoint(mobile){
-    width: 50vmin;
-  }
 }
