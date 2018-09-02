@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
 $nunito-font: 'Nunito', sans-serif;
 
+@keyframes floating {
+    from { transform: translateY(0px); }
+    65%  { transform: translateY(15px); }
+    to   { transform: translateY(-0px); }
+}
+
 html {
   height: 100%;
 }
@@ -91,6 +97,7 @@ body{
   top: 18vmin;
   left: 10vmin;
   height: 30vmin;
+  animation: floating 3s infinite ease-in-out;
 
   @include breakpoint(mobile){
     top: 2vmin;
