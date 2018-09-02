@@ -1,4 +1,4 @@
-# Mars 404 Page
+# Mars 404 Error Page
 
 [Visit design source](https://www.sketchappsources.com/free-source/3468-error-page-illustration-sketch-freebie-resource.html)
 
