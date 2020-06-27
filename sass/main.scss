@@ -1,36 +1,44 @@
-@import 'mixins';
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
-$nunito-font: 'Nunito', sans-serif;
+@import "mixins";
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700");
+$nunito-font: "Nunito", sans-serif;
 
 @keyframes floating {
-    from { transform: translateY(0px); }
-    65%  { transform: translateY(15px); }
-    to   { transform: translateY(-0px); }
+  from {
+    transform: translateY(0px);
+  }
+  65% {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(-0px);
+  }
 }
 
 html {
   height: 100%;
 }
 
-body{
-  background-image: url('https://mars-404.templateku.co/img/star.svg'),linear-gradient(to bottom, #05007A, #4D007D);
+body {
+  background-image: url("https://mars-404.netlify.app/img/star.svg"),
+    linear-gradient(to bottom, #05007a, #4d007d);
   height: 100%;
   margin: 0;
   background-attachment: fixed;
   overflow: hidden;
 }
 
-.mars{
-  left:0;
-  right:0;
-  bottom:0;
-  position:absolute;
+.mars {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
   height: 27vmin;
-  background: url('https://mars-404.templateku.co/img/mars.svg') no-repeat bottom center;
+  background: url("https://mars-404.netlify.app/img/mars.svg") no-repeat bottom
+    center;
   background-size: cover;
 }
 
-.logo-404{
+.logo-404 {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -39,18 +47,18 @@ body{
   top: 16vmin;
   width: 30vmin;
 
-  @include breakpoint(mobile){
+  @include breakpoint(mobile) {
     top: 45vmin;
   }
 }
 
-.meteor{
+.meteor {
   position: absolute;
   right: 2vmin;
   top: 16vmin;
 }
 
-.title{
+.title {
   color: white;
   font-family: $nunito-font;
   font-weight: 600;
@@ -58,12 +66,12 @@ body{
   font-size: 5vmin;
   margin-top: 31vmin;
 
-  @include breakpoint(mobile){
+  @include breakpoint(mobile) {
     margin-top: 65vmin;
   }
 }
 
-.subtitle{
+.subtitle {
   color: white;
   font-family: $nunito-font;
   font-weight: 400;
@@ -73,7 +81,7 @@ body{
   margin-bottom: 9vmin;
 }
 
-.btn-back{
+.btn-back {
   border: 1px solid white;
   color: white;
   height: 5vmin;
@@ -82,34 +90,34 @@ body{
   text-decoration: none;
   border-radius: 5px;
 
-  &:hover{
+  &:hover {
     background: white;
-    color: #4D007D;
+    color: #4d007d;
   }
 
-  @include breakpoint(mobile){
+  @include breakpoint(mobile) {
     font-size: 3.5vmin;
   }
 }
 
-.astronaut{
+.astronaut {
   position: absolute;
   top: 18vmin;
   left: 10vmin;
   height: 30vmin;
   animation: floating 3s infinite ease-in-out;
 
-  @include breakpoint(mobile){
+  @include breakpoint(mobile) {
     top: 2vmin;
   }
 }
 
-.spaceship{
+.spaceship {
   position: absolute;
   bottom: 15vmin;
   right: 24vmin;
 
-  @include breakpoint(mobile){
+  @include breakpoint(mobile) {
     width: 45vmin;
     bottom: 18vmin;
   }
